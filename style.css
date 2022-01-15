@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: white;
+}
+/* primary-color */
+.primary-color {
+  color: #e02c6d;
+}
+/* ----------------------
+---Header start and End
+------------------------*/
+.container {
+  width: 100%;
+}
+.header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.company-name h2 {
+  font-size: 24px;
+}
+.navbar {
+  display: flex;
+
+  /* margin-right: 10px; */
+}
+.navbar ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar ul a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 15px 20px;
+  color: black;
+}
+.first-child {
+  font-size: 24px;
+  margin-left: 20px;
+}
+.second-child {
+  font-size: 24px;
+  margin-left: 20px;
+}
+/* big header style */
+
+.big-header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  grid-column-gap: 130px;
+  margin-bottom: 50px;
+}
+.header-left h1 {
+  font-size: 42px;
+  color: black;
+}
+.header-left p {
+  font-size: 16px;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+.button {
+  font-size: 16px;
+  background-color: #e02c6d;
+  border-radius: 25px;
+  width: 170px;
+  padding: 10px;
+  left: 24px;
+  top: 10px;
+  text-align: center;
+}
+.button a {
+  color: white;
+  text-decoration: none;
+}
+.fa-arrow-right {
+  color: white;
+  margin-left: 8px;
+}
+/* brand name */
+.brand-name {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 80px;
+}
+.hr-one {
+  background-image: linear-gradient(white, gray, white);
+}
+.brand-logo {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-column-gap: 20px;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 0;
+}
+/* main style */
+
+main h1 {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.colletion {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 80px;
+}
+.collection-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 30px;
+}
+.item {
+  width: 329px;
+  height: 420px;
+  padding: 10px;
+  box-shadow: 5px 10px 18px #888888;
+  margin-bottom: 30px;
+}
+.item img {
+  width: 308px;
+  height: 256px;
+  margin: auto;
+}
+.item h3 {
+  font-size: 20px;
+}
+.fa-star {
+  color: #fb8200;
+  font-size: 12px;
+}
+.see-more {
+  text-align: right;
+}
+.see-more a {
+  color: #e02c6d;
+  font-size: 15px;
+  text-decoration: none;
+}
+.see-more .fa-arrow-right {
+  color: #e02c6d;
+  font-size: 15px;
+  text-decoration: none;
+}
+/* Contact-us */
+.contact-us {
+  width: 80%;
+  margin: auto;
+}
+form {
+  text-align: center;
+}
+.fieldset {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  border: 0;
+}
+.contact-us h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.form-control {
+  padding: 10px;
+  margin: 10px;
+}
+button {
+  font-size: 16px;
+  background-color: #e02c6d;
+  border-radius: 25px;
+  width: 100px;
+  padding: 10px;
+  justify-content: center;
+}
+
+/* footer style */
+footer {
+  height: 180px;
+  margin-top: 50px;
+  background-color: black;
+}
+.footer-info {
+  color: white;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 15px;
+}
+.socail-icon {
+  display: grid;
+  grid-template-columns: repeat(5, 30px);
+  justify-content: center;
+  color: white;
+  margin: 5px;
+  font-size: 24px;
+}
+
+@media only screen and (max-width: 688px) {
+  .big-header {
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+  }
+  .brand-logo {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .collection-items {
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+  }
+  .contact-us {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .socail-icon {
+    grid-template-columns: repeat(5, 30px);
+  }
+}
